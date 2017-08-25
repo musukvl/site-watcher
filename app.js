@@ -9,10 +9,11 @@ const Probe = require('pmx').probe();
 let appStatistics = {
     statusDbErrors : 0,
     statusDbLastError: "",
-    counters: {}
+    counters: {},
+    environment: `env=${config('NODE_ENV')} statusDB=${config('status-db-url')}`
 };
 
-pmx.action('service-stat', (reply) => {
+pmx.action('service-stat', function(reply)  {
     reply(appStatistics);
 });
 
@@ -24,7 +25,7 @@ async function main() {
 
             appStatistics.counters[site] = 0;
             let metric = Probe.metric({
-                name    : `${site}-counter`,
+                name    : `${site} calls`,
                 value   : () => {
                     return appStatistics.counters[site];
                 }
