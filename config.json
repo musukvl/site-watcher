@@ -1,13 +1,12 @@
 {
-  "status-db-url": "http://localhost:8080",
+  "status-db-url": "http://statusdb.dev",
   "api-key": "368c41a2-4f6b-40a7-b1a7-528bd5380156",
   "namespace": "site-guard",
   "sites": {
-    "musuk.guru": {
+    "localhost": {
       "url": "http://localhost",
       "period": 30000
     }
   },
   "loggers": "all"
-
 }
