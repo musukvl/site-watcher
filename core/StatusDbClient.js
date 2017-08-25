@@ -1,6 +1,8 @@
 const request = require('request-promise');
 const hash = require('object-hash');
 const moment = require('moment');
+const log = require("../config/log")("StatusDbClient");
+
 
 class StatusDbClient {
 
@@ -17,13 +19,14 @@ class StatusDbClient {
         let sendStatusResponse = await request({
             method: 'POST',
             uri: `${this._serverUrl}/api/status`,
-            body: { status: statusList },
+            body: {status: statusList},
             qs: {},
             headers: {
                 'X-Api-Key': this._apiKey
             },
             json: true
         });
+
         return sendStatusResponse;
     }
 

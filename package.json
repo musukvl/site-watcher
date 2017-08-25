@@ -13,9 +13,13 @@
     "moment": "^2.18.1",
     "nconf": "^0.8.4",
     "object-hash": "^1.1.8",
+    "pmx": "^1.2.0",
     "request": "^2.81.0",
     "request-promise": "^4.2.1",
     "winston": "^2.3.1",
     "winston-daily-rotate-file": "^1.4.6"
+  },
+  "devDependencies": {
+    "cross-env": "^5.0.5"
   }
 }
