@@ -1,0 +1,21 @@
+{
+  "status-db-url": "http://localhost:8080",
+  "api-key": "368c41a2-4f6b-40a7-b1a7-528bd5380156",
+  "namespace": "site-guard",
+  "sites": {
+    "musuk.guru": {
+      "url": "http://www.musuk.guru",
+      "period": 30000
+    },
+    "darja.info": {
+      "url": "http://darja.info",
+      "period": 30000
+    },
+    "echo.musuk.guru": {
+      "url": "http://echo.musuk.guru",
+      "period": 30000
+    }
+  },
+  "loggers": "all"
+
+}
