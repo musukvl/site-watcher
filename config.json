@@ -4,15 +4,7 @@
   "namespace": "site-guard",
   "sites": {
     "musuk.guru": {
-      "url": "http://www.musuk.guru",
-      "period": 30000
-    },
-    "darja.info": {
-      "url": "http://darja.info",
-      "period": 30000
-    },
-    "echo.musuk.guru": {
-      "url": "http://echo.musuk.guru",
+      "url": "http://localhost",
       "period": 30000
     }
   },
