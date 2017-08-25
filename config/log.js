@@ -35,7 +35,11 @@ function createInternalLogger() {
 
     let logger = new (winston.Logger)({
         transports: [
-            new (winston.transports.Console)({ level: 'silly' }),
+            new (winston.transports.Console)({
+                level: config('NODE_ENV') == "development" ? 'silly' : "warn",
+                colorize: true,
+                timestamp: true
+            }),
             new (winston.transports.DailyRotateFile)({
                 filename: './log/log',
                 datePattern: `yyyy-MM-dd.${config('NODE_ENV')}.`,

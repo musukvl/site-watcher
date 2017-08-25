@@ -1,12 +1,13 @@
 {
-  "status-db-url": "http://statusdb.dev",
+  "status-db-url": "http://localhost:8081",
   "api-key": "368c41a2-4f6b-40a7-b1a7-528bd5380156",
   "namespace": "site-guard",
   "sites": {
     "localhost": {
       "url": "http://localhost",
-      "period": 30000
+      "period": 5000
     }
   },
-  "loggers": "all"
+  "loggers": "all",
+  "log_level": "warn"
 }
