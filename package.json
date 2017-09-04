@@ -2,7 +2,7 @@
   "name": "site-guard",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +12,7 @@
   "dependencies": {
     "moment": "^2.18.1",
     "nconf": "^0.8.4",
+    "node-statusdb-client": "git+https://github.com/musukvl/node-statusdb-client.git",
     "object-hash": "^1.1.8",
     "pmx": "^1.2.0",
     "request": "^2.81.0",

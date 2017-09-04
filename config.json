@@ -4,7 +4,7 @@
   "namespace": "site-guard",
   "sites": {
     "localhost": {
-      "url": "http://localhost",
+      "url": "http://localhost:8081",
       "period": 5000
     }
   },
